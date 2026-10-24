@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agrineeds-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
